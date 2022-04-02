@@ -7,6 +7,8 @@
 
 using namespace std;
 
+//codigo incompleto diculpe
+
 class Matricula
 {
     string codigo;
