@@ -1,0 +1,22 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/cygdrive/c/Users/lagg/Desktop/untitled/main.cpp
+iostream
+-
+p4.cpp
+/cygdrive/c/Users/lagg/Desktop/untitled/p4.cpp
+
+/cygdrive/c/Users/lagg/Desktop/untitled/p4.cpp
+string
+-
+fstream
+-
+vector
+-
+
