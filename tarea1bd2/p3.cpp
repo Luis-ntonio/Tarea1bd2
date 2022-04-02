@@ -106,9 +106,14 @@ int textoo() {
     cin>> archivo;
     VariableRecord archivos{archivo};
     Alumno aux;
-    //aux.SetData();
-    //archivos.add(aux);
-
+    cout << "ingrese numero de datos"<< endl;
+    int cant=0;
+    cin>>cant;
+    for (int i = 0; i < cant; ++i) {
+        Alumno aux;
+        aux.SetData();
+        archivos.add(aux);
+    }
     auto x =archivos.load();
 
     for(auto i : x){

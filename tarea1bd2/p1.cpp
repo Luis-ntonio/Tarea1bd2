@@ -107,11 +107,15 @@ int textoo() {
     string archivo;
     cin>> archivo;
     FixedFile archivos{archivo};
-    /*for (int i = 0; i < 2; ++i) {
+    cout << "ingrese numero de datos"<< endl;
+    int cant=0;
+    cin>>cant;
+    for (int i = 0; i < cant; ++i) {
         Alumno aux;
         aux.SetData();
         archivos.add(aux);
-    }*/
+    }
+
     auto x = archivos.readRecord(0);
     x.ShowData();
     return 0;

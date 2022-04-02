@@ -186,12 +186,14 @@ public:
 
 
 int textoo() {
-    cout << "ingrese nombre de archivo"<< endl;
-    string archivo = "archivo2.dat";
-    //cin>> archivo;
+    cout << "ingrese nombre de archivo en .dat"<< endl;
+    string archivo;
+    cin>> archivo;
     FixedFile archivos{archivo};
-    for (int i = 0; i < 3; ++i) {
-
+    cout << "ingrese numero de datos"<< endl;
+    int cant=0;
+    cin>>cant;
+    for (int i = 0; i < cant; ++i) {
         Alumno aux;
         aux.SetData();
         archivos.add(aux);
